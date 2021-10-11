@@ -1,0 +1,267 @@
+.city-form-a {
+    height: 60px;
+    width: 250px;
+    border-radius: 30px;
+    background-color: white;
+    position: absolute;
+    top: 160px;
+    left: 5%;
+    text-align: center;
+    transition: 1s;
+}
+
+.city-form-b {
+    height: 60px;
+    width: 250px;
+    border-radius: 30px;
+    background-color: white;
+    position: absolute;
+    top: 160px;
+    left: 10%;
+    text-align: center;
+    transition: 1s
+}
+
+.checkIn-form-a {
+    height: 60px;
+    width: 250px;
+    border-radius: 30px;
+    background-color: white;
+    position: absolute;
+    top: 260px;
+    left: 15%;
+    text-align: center;
+    transition: 1s
+}
+
+.checkIn-form-b {
+    height: 60px;
+    width: 250px;
+    border-radius: 30px;
+    background-color: white;
+    position: absolute;
+    top: 260px;
+    left: 10%;
+    text-align: center;
+    transition: 1s
+}
+
+.checkOut-form-a {
+    height: 60px;
+    width: 250px;
+    border-radius: 30px;
+    background-color: white;
+    position: absolute;
+    top: 360px;
+    left: 5%;
+    text-align: center;
+    transition: 1s
+}
+
+.checkOut-form-b {
+    height: 60px;
+    width: 250px;
+    border-radius: 30px;
+    background-color: white;
+    position: absolute;
+    top: 360px;
+    left: 10%;
+    text-align: center;
+    transition: 1s
+}
+
+.participants-form-a {
+    height: 60px;
+    width: 250px;
+    border-radius: 30px;
+    background-color: white;
+    position: absolute;
+    top: 460px;
+    left: 15%;
+    text-align: center;
+    transition: 1s
+}
+
+.participants-form-b {
+    height: 60px;
+    width: 250px;
+    border-radius: 30px;
+    background-color: white;
+    position: absolute;
+    top: 460px;
+    left: 10%;
+    text-align: center;
+    transition: 1s
+}
+
+.equipments-form-a {
+    height: 60px;
+    width: 250px;
+    border-radius: 30px;
+    background-color: white;
+    position: absolute;
+    top: 560px;
+    left: 5%;
+    text-align: center;
+    transition: 1s
+}
+
+.equipments-form-b {
+    height: 60px;
+    width: 250px;
+    border-radius: 30px;
+    background-color: white;
+    position: absolute;
+    top: 560px;
+    left: 10%;
+    text-align: center;
+    transition: 1s
+}
+
+.city-label, .checkIn-label, .checkOut-label, .participants-label, .equipments-label {
+    height: 15px;
+    display: block;
+    font-weight: bold;
+}
+
+.checkIn-field, .checkOut-field {
+    font-size: 0.8em;
+}
+
+.main-form input, select {
+    border: none;
+}
+
+.main-form input:focus, select:focus {
+    outline: none;
+}
+
+.multiselect {
+    width: 170px;
+    text-align: left;
+    margin-left: 40px;
+}
+
+.selectBox {
+    position: relative;
+}
+
+.selectBox select {
+    width: 100%;
+}
+
+.overSelect {
+    position: absolute;
+    left: 0;
+    right: 0;
+    top: 0;
+    bottom: 0;
+}
+
+.checkboxes {
+    background-color: white;
+    z-index: 1;
+    position: relative;
+    display: block;
+}
+
+.checkboxes-close {
+    background-color: white;
+    z-index: 1;
+    position: relative;
+    display: none;
+}
+
+#checkboxes label {
+    display: block;
+}
+
+#checkboxes label:hover {
+    background-color: #1e90ff;
+}
+
+.noRoom {
+    font-size: 3em;
+    position: absolute;
+    top: 400px;
+    left: 42%;
+    font-weight: bold;
+    color: white;
+    text-shadow: 3px 3px 4px #000000;
+}
+
+.search {
+    position: absolute;
+    top: 660px;
+    left: 10%;
+    height: 60px;
+    width: 250px;
+    border-radius: 30px;
+    background-color: #35A8CC;
+    border-style: none;
+}
+
+.search:hover {
+    background-color: #1f7f9c;
+}
+
+.search:focus {
+    background-color: #1f7f9c;
+    box-shadow: none;
+}
+
+@media screen and (max-width: 1200px) {
+    
+    .city-form-a, .city-form-b, .checkIn-form-a, .checkIn-form-b, .checkOut-form-a, .checkOut-form-b, .participants-form-a, .participants-form-b, .equipments-form-a, .equipments-form-b {
+        height: 60px;
+        width: 150px;
+        position: unset;
+        margin-left: 20px;
+        margin-bottom: 10px;
+        transition: none;
+    }
+    
+    .multiselect {
+        width: 120px;
+        margin-left: 16px;
+        font-size: 0.8em;
+        position: unset;       
+    }
+
+    .search {
+        position: unset;
+        top: 120px;
+        left: 860px;
+        height: 60px;
+        width: 80px;
+        margin-left: 20px;
+    }
+
+    .checkIn-field, .checkOut-field, .participants-field {
+        font-size: 0.8em;
+        width: 80px;
+    }
+
+    .main-form{
+        position: absolute;
+        top: 100px;
+        display: flex;
+        justify-content: center;
+        width: 100%;
+       
+    }
+
+}
+
+
+@media screen and (max-width: 580px) {
+    .title{
+        font-size: 3em;
+    }
+}
+
+    @media screen and (max-width: 440px) {
+        .title{
+            font-size: 2em;
+        }
+}

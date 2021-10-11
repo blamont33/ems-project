@@ -1,0 +1,40 @@
+.back {
+    width: 100%;
+    height: 800px;
+    background-color: black;
+}
+
+.img-back {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    transition: 1s;
+}
+
+.img-back-2 {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    opacity: 0.1;
+    transition: 1s;
+}
+
+.ee {
+    color: #35A8CC
+}
+
+.oo {
+    color: #F29100
+}
+
+.title {
+    font-size: 4em;
+    font-weight: bold;
+    color: white;
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    text-shadow: 1px 3px 5px rgba(0, 0, 0, 0.5);
+    text-align: center;
+}
