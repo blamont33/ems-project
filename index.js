@@ -5,10 +5,15 @@ const cors = require("cors")
 const pool = require("./db")
 const sgMail = require('@sendgrid/mail')
 const PORT = process.env.PORT || 5000
+const path = require("path");
 
 //middleware
 app.use(cors());
 app.use(express.json());
+
+if (process.env.NODE_ENV === "production") {
+    app.use(express.static(path.join(__dirname, "client/build")));
+  }
 
 //Select all cities
 app.get("/cities", async (req, res) => {
@@ -170,6 +175,9 @@ app.get("/allRooms", async (req, res) => {
     }
 })
 
+app.get("*", (req, res) => {
+    res.sendFile(path.join(__dirname, "client/build/index.html"));
+});
 
 app.listen(PORT, () => {
     console.log(`server has started on port ${PORT}`);
