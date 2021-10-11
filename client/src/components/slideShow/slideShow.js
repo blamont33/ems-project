@@ -35,8 +35,8 @@ const SlideShow = ({ availableRooms, checkIn, checkOut }) => {
 
     return (
         <section className="slider">
-            <FaArrowAltCircleLeft className="left-arrow" onClick={prevSlide} />
-            <FaArrowAltCircleRight className="right-arrow" onClick={nextSlide} />
+            {length > 1 && <FaArrowAltCircleLeft className="left-arrow" onClick={prevSlide} />}
+            {length > 1 &&<FaArrowAltCircleRight className="right-arrow" onClick={nextSlide} />}
             <AiFillCloseCircle className="close1" onClick={reset}/>
             {availableRooms.map((room, index) => {
                 return (

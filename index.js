@@ -59,9 +59,9 @@ app.get("/rooms", async (req, res) => {
         unavailableRoomsArray.forEach(element => room_id = room_id + `and r.room_id != ${element} `)
 
         if (equipments) {
-            equipment_id = "and ( "
-            equipments.forEach(element => equipment_id = equipment_id + `${element} = er.equipment_id or `)
-            equipment_id = equipment_id.substring(0, equipment_id.length - 3)
+            equipment_id = "and er.equipment_id in ("
+            equipments.forEach(element => equipment_id = equipment_id + `${element}, `)
+            equipment_id = equipment_id.substring(0, equipment_id.length - 2)
             equipment_id = equipment_id + ")"
         }
 
